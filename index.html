@@ -1,0 +1,231 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Glitter Macedonia — Premium Glitter & Chrome Finishes</title>
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Cormorant+Garamond:wght@300;400;500&family=Jost:wght@300;400;500&display=swap" rel="stylesheet">
+  <link rel="stylesheet" href="style.css">
+</head>
+<body>
+  <!-- Header -->
+  <header class="header" id="header">
+    <div class="header-inner">
+      <a href="#home" class="logo" data-nav="home">GLITTER MACEDONIA</a>
+      <nav class="nav" id="nav">
+        <a href="#home" class="nav-link active" data-nav="home">Home</a>
+        <a href="#products" class="nav-link" data-nav="products">Products</a>
+        <a href="#about" class="nav-link" data-nav="about">About Us</a>
+        <a href="#contact" class="nav-link" data-nav="contact">Contact</a>
+      </nav>
+      <a href="#products" class="btn-shop-header" data-nav="products">Shop Now</a>
+      <button class="hamburger" id="hamburger" aria-label="Menu">
+        <span></span>
+        <span></span>
+        <span></span>
+      </button>
+    </div>
+  </header>
+
+  <!-- Mobile Nav -->
+  <div class="mobile-nav" id="mobile-nav">
+    <a href="#home" class="mobile-nav-link" data-nav="home">Home</a>
+    <a href="#products" class="mobile-nav-link" data-nav="products">Products</a>
+    <a href="#about" class="mobile-nav-link" data-nav="about">About Us</a>
+    <a href="#contact" class="mobile-nav-link" data-nav="contact">Contact</a>
+    <a href="#products" class="btn-shop-mobile" data-nav="products">Shop Now</a>
+  </div>
+
+  <main>
+    <!-- HOME PAGE -->
+    <section id="home" class="page active">
+      <!-- Hero -->
+      <div class="hero" id="hero">
+        <div class="hero-bg" id="hero-bg"></div>
+        <canvas id="particles" class="particles"></canvas>
+        <div class="hero-content">
+          <h1 class="hero-title">GLITTER MACEDONIA</h1>
+          <p class="hero-subtitle">A curated house of premium glitter, chrome powders and flawless finishes.<br>Monochrome by design, brilliant in every light.</p>
+          <a href="#products" class="btn-hero" data-nav="products">Shop Now</a>
+        </div>
+      </div>
+
+      <!-- Featured Products -->
+      <section class="featured section">
+        <div class="container">
+          <p class="section-label">Selected</p>
+          <h2 class="section-title">Featured Products</h2>
+          <p class="section-subtitle">Five signature pieces from the collection.</p>
+          <div class="product-grid" id="featured-grid"></div>
+          <div class="featured-cta">
+            <a href="#products" class="btn-outline" data-nav="products">View all products</a>
+          </div>
+        </div>
+      </section>
+
+      <!-- Gallery -->
+      <section class="gallery-section section">
+        <div class="container">
+          <p class="section-label">Inspiration</p>
+          <h2 class="section-title">Gallery</h2>
+          <p class="section-subtitle">A selection of finishes and textures from the collection.</p>
+          <div class="gallery-grid" id="gallery-grid"></div>
+        </div>
+      </section>
+
+     
+      <!-- Contact teaser on home -->
+      <section class="contact-teaser section">
+        <div class="container">
+          <p class="section-label">Get in touch</p>
+          <h2 class="section-title">Orders &amp; enquiries</h2>
+          <p class="section-subtitle">Call us directly for availability, wholesale pricing and delivery anywhere in Macedonia.</p>
+          <a href="tel:+38978367774" class="phone-link">+389 78 367 774</a>
+        </div>
+      </section>
+    </section>
+
+    <!-- PRODUCTS PAGE -->
+    <section id="products" class="page">
+      <div class="page-header">
+        <div class="container">
+          <p class="section-label">The collection</p>
+          <h1 class="page-title">Products</h1>
+          <p class="section-subtitle" id="products-count">Loading products…</p>
+        </div>
+      </div>
+      <div class="container products-controls">
+        <div class="search-wrap">
+          <input type="text" id="product-search" placeholder="Search products…" class="search-input">
+        </div>
+        <div class="filter-row" id="category-filters"></div>
+      </div>
+      <div class="container">
+        <div class="product-grid" id="all-products-grid"></div>
+      </div>
+    </section>
+
+    <!-- ABOUT PAGE -->
+    <section id="about" class="page">
+      <div class="about-hero">
+        <div class="container">
+          <p class="section-label">Our story</p>
+          <h1 class="about-title">A quiet obsession with brilliance</h1>
+          <div class="about-text">
+            <p>Glitter Macedonia began with a simple idea: that sparkle can be sophisticated. We source fine cosmetic glitters, chrome powders, flakes and gels — then strip everything else away, so the finish speaks for itself.</p>
+            <p>Today we supply nail artists, makeup professionals and enthusiasts across the country with a tightly edited catalogue and honest pricing.</p>
+          </div>
+        </div>
+      </div>
+      <div class="about-images">
+        <div class="container about-grid">
+          <div class="about-img"><img src="image18.JPG" alt="Product detail" onerror="this.src='images/hero.jpg'"></div>
+          <div class="about-img"><img src="image14.JPG" alt="Product detail" onerror="this.src='images/hero.jpg'"></div>
+          <div class="about-img"><img src="image17.JPG" alt="Product detail" onerror="this.src='images/hero.jpg'"></div>
+        </div>
+      </div>
+      <div class="about-values section">
+        <div class="container values-grid">
+          <div class="value-card">
+            <h3>Curated</h3>
+            <p>Every product is tested before it earns a place in the collection.</p>
+          </div>
+          <div class="value-card">
+            <h3>Professional</h3>
+            <p>Salon-grade pigments and tools trusted by working artists.</p>
+          </div>
+          <div class="value-card">
+            <h3>Local</h3>
+            <p>Shipped from Skopje, with fast delivery across Macedonia.</p>
+          </div>
+        </div>
+        <div class="container about-cta">
+          <a href="#products" class="btn-outline" data-nav="products">Explore the collection</a>
+        </div>
+      </div>
+    </section>
+
+    <!-- CONTACT PAGE -->
+    <section id="contact" class="page">
+      <div class="contact-page section">
+        <div class="container">
+          <p class="section-label">Get in touch</p>
+          <h1 class="page-title">Orders &amp; enquiries</h1>
+          <p class="section-subtitle">Call us directly for availability, wholesale pricing and delivery anywhere in Macedonia.</p>
+          <a href="tel:+38978367774" class="phone-link large">+389 78 367 774</a>
+          <p class="contact-note">We respond to enquiries during business hours, Monday–Saturday.</p>
+        </div>
+      </div>
+    </section>
+  </main>
+
+  <!-- Footer -->
+  <footer class="footer">
+    <div class="container footer-inner">
+      <div class="footer-brand">
+        <div class="footer-logo">GLITTER MACEDONIA</div>
+        <p>Premium glitter, powders and finishes.</p>
+      </div>
+      <div class="footer-col">
+        <h4>Navigate</h4>
+        <a href="#home" data-nav="home">Home</a>
+        <a href="#products" data-nav="products">Products</a>
+        <a href="#about" data-nav="about">About Us</a>
+        <a href="#contact" data-nav="contact">Contact</a>
+      </div>
+      <div class="footer-col">
+        <h4>Follow</h4>
+        <a href="https://www.instagram.com/glittermacedonia?igsi=b3lvMjA3cjZ0anZl" target="_blank" rel="noopener">Instagram</a>
+        
+      </div>
+      <div class="footer-col">
+        <h4>Phone</h4>
+        <a href="tel:+38978367774">+389 78 367 774</a>
+      </div>
+    </div>
+    <div class="footer-bottom">
+      <div class="container">
+        <p>© 2026 Glitter Macedonia. All rights reserved.</p>
+        <p>Skopje, North Macedonia</p>
+      </div>
+    </div>
+  </footer>
+
+  <!-- Product Modal -->
+  <div class="modal-overlay" id="product-modal">
+    <div class="modal">
+      <button class="modal-close" id="modal-close" aria-label="Close">&times;</button>
+      <div class="modal-body">
+        <div class="modal-image">
+          <img id="modal-img" src="" alt="">
+        </div>
+        <div class="modal-info">
+          <p class="modal-category" id="modal-category"></p>
+          <h2 class="modal-name" id="modal-name"></h2>
+          <p class="modal-desc" id="modal-desc"></p>
+          <p class="modal-price" id="modal-price"></p>
+          <div class="quantity-row">
+            <label for="quantity">Quantity</label>
+            <div class="qty-controls">
+              <button type="button" id="qty-minus">−</button>
+              <input type="number" id="quantity" value="1" min="1" max="99">
+              <button type="button" id="qty-plus">+</button>
+            </div>
+          </div>
+          <a href="tel:+38978367774" class="btn-order">Order now</a>
+        </div>
+      </div>
+    </div>
+  </div>
+
+  <!-- Lightbox -->
+  <div class="lightbox" id="lightbox">
+    <button class="lightbox-close" id="lightbox-close" aria-label="Close">&times;</button>
+    <img id="lightbox-img" src="" alt="">
+  </div>
+
+  <script src="script.js"></script>
+</body>
+</html>
